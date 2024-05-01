@@ -1,4 +1,3 @@
-======================================
 inspired by Gilded Rose Refactoring kata
 https://github.com/emilybache/GildedRose-Refactoring-Kata
 ======================================
