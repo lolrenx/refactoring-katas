@@ -1,6 +1,8 @@
 # now implement "Wine festival ticket"
 # "Wine festival ticket" degrade in Value twice as fast as normal tickets
 from abc import ABC, abstractmethod
+
+
 class Ticket:
     def __init__(self, name, concert_countdown, value):
         self.name = name
