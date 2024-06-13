@@ -25,6 +25,10 @@ def process_inanimate(e: Entity) -> None:
     print(f"processing {e} as an inanimate object")
 
 
+def process_living(e: Entity) -> None:
+    print(f"processing {e} as a living entity")
+
+
 def process_inanimates(e_list: list[Entity]) -> None:
     print("Starting to process inanimate objects")
     for e in e_list:
@@ -40,3 +44,9 @@ if __name__ == "__main__":
         if entity_service.entity_by_id(i)
     ]
     process_inanimates(entity_list)
+    print("starting to process living entities")
+    for e in entity_list:
+        if e.entity_type == Entity.EntityType.PERSON:
+            process_living(e)
+
+    print("done")
